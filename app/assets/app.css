@@ -1,0 +1,28 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(25, 20, 31);
+}
+.glav_cont{
+    borde: 2px solid red;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.left{
+    borde: 2px solid blue;
+    height: 100%;
+    width: 7%;
+}
+.right{
+    borde: 2px solid greenyellow;
+    height: 100%;
+    width: 93%;
+}
