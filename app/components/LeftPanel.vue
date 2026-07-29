@@ -1,5 +1,6 @@
 <template>
-<div class="divi"></div>
+<div class="divi">
+</div>
 </template>
 
 <style scoped>
