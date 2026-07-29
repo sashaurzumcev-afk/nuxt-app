@@ -12,8 +12,8 @@
     <div class="search">
         <div class="search_mini"><input type="text" placeholder="Search"><SvgoLypa /></div>
     </div>
-    <div class="history">
-        <div class="history_mini"><SvgoOclock />History</div>
+    <div class="time">
+        <div class="time_mini"><SvgoSun />Time</div>
     </div>
     <div class="profil">
         <div class="profil_mini"><SvgoProfil />Profil</div>
@@ -37,6 +37,8 @@
     align-items: center;
     justify-content: center;
     border-right: 2px solid rgb(50, 38, 66);
+    border-left: 2px solid rgb(50, 38, 66);
+
 }
 .create_mini{
     borde: 1px solid blue;
@@ -164,7 +166,7 @@
 
 
 
-.history{
+.time{
     borde: 1px solid greenyellow;
     height: 100%;
     width: calc(100%/6);
@@ -174,7 +176,7 @@
     border-right: 2px solid rgb(50, 38, 66);
     border-left: 2px solid rgb(50, 38, 66);
 }
-.history_mini{
+.time_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
@@ -188,7 +190,7 @@
     font-weight: 400;
     box-shadow: 0px 0px 10px 2px rgb(78, 66, 219);
 }
-.history_mini:hover{
+.time_mini:hover{
     box-shadow: 0px 0px 15px 13px rgb(55, 24, 219);
     background-color: rgb(122, 147, 255);
     border: 1px solid white;

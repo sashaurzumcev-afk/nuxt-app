@@ -6,12 +6,14 @@
 
 <style scoped>
 .divi{
-    border: 2px solid greenyellow;
+    borde: 2px solid greenyellow;
     height: 84%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 2px solid rgb(50, 38, 66);
+    border-to: 2px solid rgb(50, 38, 66);
 }
 .text{
     border: 2px solid blue;
