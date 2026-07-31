@@ -9,13 +9,13 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(25, 20, 31);
+  background-color:var(--glav-bg);
 }
-.glav_cont{
-    borde: 2px solid red;
+.glav_cont {
+    display: flex;
     height: 100vh;
     width: 100%;
-    display: flex;
+    overflow: hidden;
 }
 .left{
     borde: 2px solid blue;
@@ -23,10 +23,92 @@ html, body {
     width: 7%;
 }
 .right{
-    borde: 2px solid greenyellow;
-    height: 100%;
-    width: 93%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+.page-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 svg path, svg circle {
   fill: none !important;
+}
+.dark-mode {
+--border: 1px solid white;
+--glav-bg:rgb(7, 5, 10);
+--text-shadow: 0 0 10px rgb(101, 255, 242), 0 0 10px rgb(101, 255, 242);
+--border-right:2px solid rgb(50, 38, 66);
+--border-left:2px solid rgb(50, 38, 66);
+
+--blue-box-shadow: 0px 0px 15px 13px rgb(55, 24, 219);
+--blue-background-color: rgb(122, 147, 255);
+--blue-box-shadow: 0px 0px 10px 2px rgb(78, 66, 219);
+--blue-background-color: rgb(86, 110, 219);
+
+--yellow-box-shadow: 0px 0px 15px 13px rgb(255, 153, 0);
+--yellow-background-color: rgb(254, 216, 0);
+--yellow-box-shadow: 0px 0px 10px 2px #ffaa2a;
+--yellow-background-color: rgb(219, 166, 86);
+
+--red-box-shadow: 0px 0px 15px 13px rgb(188, 0, 86);
+--red-background-color: rgb(246, 105, 86);
+--red-box-shadow: 0px 0px 10px 2px rgb(211, 42, 86);
+--red-background-color: rgb(219, 86, 86);
+
+--blu-box-shadow: 0px 0px 15px 13px rgb(56, 139, 255);
+--blu-background-color: rgb(110, 255, 243);
+--blu-box-shadow: 0px 0px 10px 2px rgb(78, 155, 208);
+--blu-background-color: rgb(86, 219, 208);
+
+--green-box-shadow: 0px 0px 15px 13px rgb(71, 131, 86);
+--green-background-color: rgb(138, 254, 86);
+--green-box-shadow: 0px 0px 10px 2px rgb(94, 175, 86);
+--green-background-color: rgb(102, 219, 86);
+
+--purple-box-shadow: 0px 0px 10px 2px rgb(138, 42, 255);
+--purple-background-color: rgb(146, 86, 219);
+--purple-hover-background-color: rgb(130, 76, 196);
+--purple-hover-box-shadow: 0px 0px 15px 13px rgb(115, 0, 255);
+}
+
+.light-mode {
+--border: 1px solid black;
+--glav-bg:rgb(255, 215, 155);
+--border-right:2px solid rgb(117, 113, 72);
+--border-left:2px solid rgb(117, 113, 72);
+--text-shadow: 10px 10px 10px rgba(24, 24, 24, 0.438), 10px 10px 10px rgba(24, 24, 24, 0.438);
+
+--blue-hover-box-shadow: 0px 0px 15px 13px rgb(28, 0, 167);
+--blue-hover-background-color: rgb(34, 60, 179);
+--blue-box-shadow: 0px 0px 10px 5px   rgb(16, 12, 70);
+--blue-background-color: rgb(86, 80, 219);
+
+--yellow-hover-box-shadow: 0px 0px 15px 13px rgb(158, 96, 2);
+--yellow-hover-background-color: rgb(201, 103, 42);
+--yellow-box-shadow: 0px 0px 10px 5px #442d0b;
+--yellow-background-color: rgb(219, 136, 86);
+
+--red-hover-box-shadow: 0px 0px 15px 13px rgb(90, 0, 41);
+--red-hover-background-color: rgb(139, 15, 46);
+--red-box-shadow: 0px 0px 10px 5px    rgb(59, 9, 22);
+--red-background-color: rgb(219, 56, 86);
+
+--blu-hover-box-shadow: 0px 0px 15px 13px rgb(0, 57, 92);
+--blu-hover-background-color: rgb(51, 146, 138);
+--blu-box-shadow: 0px 0px 10px 5px    rgb(6, 33, 51);
+--blu-background-color: rgb(86, 189, 208);
+
+--green-hover-box-shadow: 0px 0px 15px 13px rgb(0, 95, 24);
+--green-hover-background-color: rgb(91, 158, 55);
+--green-box-shadow: 0px 0px 10px 5px rgb(15, 66, 10);
+--green-background-color: rgb(102, 189, 86);
+
+--purple-hover-box-shadow: 0px 0px 15px 13px rgb(49, 0, 109);
+--purple-hover-background-color: rgb(130, 26, 196);
+--purple-background-color: rgb(146, 56, 219);
+--purple-box-shadow: 0px 0px 10px 5px rgb(39, 12, 71);
 }

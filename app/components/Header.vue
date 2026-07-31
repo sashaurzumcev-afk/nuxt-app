@@ -1,23 +1,30 @@
 <template>
 <header class="divi">
+
     <div class="create">
-        <div class="create_mini"><SvgoCreate />Create</div>
+        <NuxtLink to="/create" class="create_mini"exact-active-class="active-link"><SvgoCreate />Create</NuxtLink>
     </div>
+
     <div class="yved">
-        <div class="yved_mini"><SvgoBell />Notify</div>
+        <NuxtLink to="/notify" class="yved_mini"exact-active-class="active-link"><SvgoBell />Notify</NuxtLink>
     </div>
+
     <div class="izbr">
-        <div class="izbr_mini"><SvgoStar />Favourite</div>
+        <NuxtLink to="/favourite"  class="izbr_mini"exact-active-class="active-link"><SvgoStar />Favourite</NuxtLink>
     </div>
+
     <div class="search">
         <div class="search_mini"><input type="text" placeholder="Search"><SvgoLypa /></div>
     </div>
+
     <div class="time">
-        <div class="time_mini"><SvgoSun />Time</div>
+        <div class="time_mini" @click="toggleTheme"><SvgoSun />Time</div>
     </div>
+
     <div class="profil">
-        <div class="profil_mini"><SvgoProfil />Profil</div>
+        <NuxtLink to="profil"  class="profil_mini" exact-active-class="active-link"><SvgoProfil />Profil</NuxtLink>
     </div>
+    
 </header>
 </template>
 
@@ -26,6 +33,7 @@
     borde: 2px solid blue;
     height: 9%;
     display: flex;
+    
 }
 
 
@@ -36,8 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(50, 38, 66);
-    border-left: 2px solid rgb(50, 38, 66);
+    border-right: var(--border-right);
 
 }
 .create_mini{
@@ -45,19 +52,21 @@
     border-radius: 10px;
     height: 70%;
     width: 70%;
-    background-color: rgb(146, 86, 219);
+    background-color: var(--purple-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px rgb(138, 42, 255);
+    box-shadow: var(--purple-box-shadow);
+    text-decoration: none;
+    color: black;
 }
 .create_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(115, 0, 255);
-    background-color: rgb(173, 105, 255);
-    border: 1px solid white;
+    box-shadow: var(--purple-hover-box-shadow);
+    background-color: var(--purple-hover-background-color);
+    border: var(--border);
 }
 
 
@@ -68,27 +77,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(50, 38, 66);
-    border-left: 2px solid rgb(50, 38, 66);
+    border-right: var(--border-right);
+    border-left: var(--border-left);
+    text-decoration: none;
+    color: black;
 }
 .yved_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
-    background-color: rgb(219, 166, 86);
+    background-color: var(--yellow-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px #ffaa2a;
+    box-shadow:var(--yellow-box-shadow);
+    text-decoration: none;
+    color: black;
 }
 .yved_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(255, 153, 0);
-    background-color: rgb(254, 216, 0);
-    border: 1px solid white;
+    box-shadow: var(--yellow-hover-box-shadow);
+    background-color: var(--yellow-hover-background-color);
+    border: var(--border);
 }
 
 
@@ -99,27 +112,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(50, 38, 66);
-    border-left: 2px solid rgb(50, 38, 66);
+    border-right: var(--border-right);
+    border-left: var(--border-left);
+    text-decoration: none;
+    color: black;
 }
 .izbr_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
-    background-color: rgb(219, 86, 86);
+    background-color: var(--red-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px rgb(211, 42, 86);
+    box-shadow: var(--red-box-shadow);
+    text-decoration: none;
+    color: black;
 }
 .izbr_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(188, 0, 86);
-    background-color: rgb(246, 105, 86);
-    border: 1px solid white;
+    box-shadow: var(--red-hover-box-shadow);
+    background-color: var(--red-hover-background-color);
+    border: var(--border);
 }
 
 
@@ -130,27 +147,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(50, 38, 66);
-    border-left: 2px solid rgb(50, 38, 66);
+    border-right: var(--border-right);
+    border-left: var(--border-left);
 }
 .search_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
-    background-color: rgb(86, 219, 208);
+    background-color: var(--blu-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px rgb(78, 155, 208);
+    box-shadow: var(--blu-box-shadow);
 }
 .search_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(56, 139, 255);
-    background-color: rgb(110, 255, 243);
-    border: 1px solid white;
+    box-shadow: var(--blu-hover-box-shadow);
+    background-color: var(--blu-hover-background-color);
+    border: var(--border);
 }
 .search_mini input{
     width: 95%;
@@ -162,6 +179,7 @@
     color: rgb(37, 114, 108);
     font-weight: 600;
     font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -173,27 +191,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(50, 38, 66);
-    border-left: 2px solid rgb(50, 38, 66);
+    border-right: var(--border-right);
+    border-left: var(--border-left);
 }
 .time_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
-    background-color: rgb(86, 110, 219);
+    background-color: var(--blue-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px rgb(78, 66, 219);
+    box-shadow: var(--blue-box-shadow);
 }
 .time_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(55, 24, 219);
-    background-color: rgb(122, 147, 255);
-    border: 1px solid white;
+    box-shadow: var(--blue-hover-box-shadow);
+    background-color: var(--blue-hover-background-color);
+    border: var(--border);
 }
 
 
@@ -204,31 +222,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 2px solid rgb(50, 38, 66);
+    border-left: var(--border-left);
+    text-decoration: none;
+    color: black;
 }
 .profil_mini{
     borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
-    background-color: rgb(102, 219, 86);
+    background-color: var(--green-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
-    box-shadow: 0px 0px 10px 2px rgb(94, 175, 86);
+    box-shadow: var(--green-box-shadow);
+    text-decoration: none;
+    color: black;
 }
 .profil_mini:hover{
-    box-shadow: 0px 0px 15px 13px rgb(71, 131, 86);
-    background-color: rgb(138, 254, 86);
-    border: 1px solid white;
+    box-shadow: var(--green-hover-box-shadow);
+    background-color: var(--green-hover-background-color);
+    border: var(--border);
 }
 
 
 </style>
 
-<script>
+<script setup>
+import { useColorMode } from '#imports';
 
+const colorMode = useColorMode()
+const toggleTheme = ()=>{
+    colorMode.preference = colorMode.value==='dark'
+    ?'light'
+    :'dark'
+}
 </script>

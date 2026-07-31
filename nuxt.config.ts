@@ -8,10 +8,16 @@ export default defineNuxtConfig({
     '@/assets/app.css',
   ],
   modules:[
-    'nuxt-svgo'
+    'nuxt-svgo','@nuxtjs/color-mode'
   ],
   svgo:{
     autoImportPath: './assets/icons/',
     global:false,
   },
+  colorMode: {
+    preference: 'dark',      // тема по умолчанию
+    fallback: 'dark',
+    classSuffix: '-mode',
+    storageKey: 'color-mode'
+  }
 })
