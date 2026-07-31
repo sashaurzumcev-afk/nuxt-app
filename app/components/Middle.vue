@@ -2,15 +2,14 @@
   <div class="divi">
     <div class="mini_divi">
         <br>
-        Добро пожаловать на Siriosly Guides! <br>
+        <span>Добро пожаловать на Siriosly Guides! </span><br>
         <br>
-        Гайды, которые действительно работают. Игры, программы, достижения — каждую тему до мелочей. Выбирай раздел слева и прокачивай навыки сейчас. Приятного изучения!
+        <span>Гайды, которые действительно работают. Игры, программы, достижения — каждую тему до мелочей. Выбирай раздел слева и прокачивай навыки сейчас. Приятного изучения!</span>
     </div>
   </div>
 </template>
 <style scoped>
 .divi{
-    borde: 2px solid white;
     width: 100%;
     height: 88%;
     display: flex;
@@ -18,16 +17,16 @@
     align-items: center;
 }
 .mini_divi{
-    borde: 2px solid red;
     width: 90%;
     height: 100%;
     font-size: 70px;
     text-align: center;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(2, 255, 255);
     text-shadow:var(--text-shadow);
     font-weight: 600;
 }
-
+.mini_divi span{
+}
 </style>

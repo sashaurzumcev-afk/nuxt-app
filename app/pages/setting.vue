@@ -1,11 +1,34 @@
 <template>
   <div class="divi">
-    <div class="mini_divi"></div>
+    <div class="mini_divi">
+
+      <div class="up_mini_divi">
+        <div class="swich_avatar">
+          <div class="avatar"></div><div class="avatar_smen"><span>Change</span></div>
+        </div>
+        <div class="name"><span>Name:</span><input type="text"><div class="name_enter"><span>Enter</span></div></div>
+        <div class="email"><span>Email:</span><input type="email"><div class="email_enter"> <span>Enter</span></div></div>
+        <div class="password"><span>Password:</span><input type="password"><div class="password_enter"><span>Enter</span></div></div>
+      </div>
+      
+      <div class="mid_mini_divi">
+        <div class="font_size"><span>Font-size:</span><div class="font-size_10"><span>10</span></div><div class="font-size_15"><span>15</span></div><div class="font-size_20"><span>20</span></div></div>
+        <div class="density"><span>Density:</span><div class="density_12"><span>12</span></div><div class="density_18"><span>18</span></div><div class="density_24"><span>24</span></div></div>
+        <div class="on_of_notify"><span>Notify:</span><div class="notify_on"><span>On</span></div><div class="notify_off"><span>Off</span></div></div>
+        <div class="language"><span>Language:</span><div class="Language_ru"><span>RU</span></div><div class="Language_en"><span>EN</span></div></div>
+        </div>
+     
+
+      <div class="down_mini_divi">
+        <div class="reset_settings"><span>Reset</span></div>
+        <div class="save_settings"><span>Save</span></div>
+      </div>
+      
+    </div>
   </div>
 </template>
 <style scoped>
 .divi{
-    borde: 2px solid white;
     width: 100%;
     height: 88%;
     display: flex;
@@ -13,10 +36,372 @@
     align-items: center;
 }
 .mini_divi{
-    borde: 2px solid red;
     width: 90%;
     height: 100%;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
+
+.up_mini_divi{
+  width: 100%;
+  height: 43%;
+}
+.swich_avatar{
+    width: 90%;
+    height: 35%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.avatar{
+  box-shadow: var(--name-input-box-shadow);
+  border: 1px solid blue;
+  background-color: white;
+  border-radius:60px;
+  width: 120px;
+  height: 120px;
+}
+.avatar_smen{
+  font-size: 25px;
+  width: 7%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+
+}
+.avatar_smen span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.name{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.name span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.name input{
+  font-size: 25px;
+  width: 20%;
+  height: 80%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+}
+.name_enter{
+  font-size: 25px;
+  width: 7%;
+  height: 60%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.email{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.email span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.email input{
+  font-size: 25px;
+  width: 20%;
+  height: 80%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+}
+.email_enter{
+  font-size: 25px;
+  width: 7%;
+  height: 60%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.password{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.password span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.password input{
+  font-size: 25px;
+  width: 20%;
+  height: 80%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+}
+.password_enter{
+  font-size: 25px;
+  width: 7%;
+  height: 60%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+
+
+.mid_mini_divi{
+  width: 100%;
+  height: 43%;
+}
+.font_size{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.font_size span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.font-size_10{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.font-size_15{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.font-size_20{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.density{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.density span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.density_12{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.density_18{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.density_24{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.on_of_notify{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.on_of_notify span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.notify_on{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.notify_off{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.language{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.language span{
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow:var(--text-shadow);
+  color: rgb(0, 255, 255);
+}
+.Language_ru{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+.Language_en{
+  font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 122, 115);
+}
+
+
+.down_mini_divi{
+  width: 100%;
+  height: 14%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reset_settings{
+    border-radius: 25px;
+    width: 45%;
+    height: 40%;
+    background-color: var(--reset-background-color);
+    box-shadow: var(--reset-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.reset_settings:hover{
+  background-color: var(--reset-hover-bg);
+  border: var(--border);
+  box-shadow: var(--reset-hover-box-shadow);
+}
+.save_settings{
+    border-radius: 25px;
+    width: 45%;
+    height: 40%;
+    background-color: var(--save-background-color);
+    box-shadow: var(--save-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.save_settings:hover{
+  background-color: var(--save-hover-bg);
+  box-shadow: var(--save-hover-box-shadow);
+  border: var(--border);
+}
 </style>

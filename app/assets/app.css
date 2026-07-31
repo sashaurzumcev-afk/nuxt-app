@@ -44,28 +44,28 @@ svg path, svg circle {
 --border-right:2px solid rgb(50, 38, 66);
 --border-left:2px solid rgb(50, 38, 66);
 
---blue-box-shadow: 0px 0px 15px 13px rgb(55, 24, 219);
---blue-background-color: rgb(122, 147, 255);
+--blue-hover-box-shadow: 0px 0px 15px 13px rgb(55, 24, 219);
+--blue-hover-background-color: rgb(122, 147, 255);
 --blue-box-shadow: 0px 0px 10px 2px rgb(78, 66, 219);
 --blue-background-color: rgb(86, 110, 219);
 
---yellow-box-shadow: 0px 0px 15px 13px rgb(255, 153, 0);
---yellow-background-color: rgb(254, 216, 0);
+--yellow-hover-box-shadow: 0px 0px 15px 13px rgb(255, 153, 0);
+--yellow-hover-background-color: rgb(254, 216, 0);
 --yellow-box-shadow: 0px 0px 10px 2px #ffaa2a;
 --yellow-background-color: rgb(219, 166, 86);
 
---red-box-shadow: 0px 0px 15px 13px rgb(188, 0, 86);
---red-background-color: rgb(246, 105, 86);
+--red-hover-box-shadow: 0px 0px 15px 13px rgb(188, 0, 86);
+--red-hover-background-color: rgb(246, 105, 86);
 --red-box-shadow: 0px 0px 10px 2px rgb(211, 42, 86);
 --red-background-color: rgb(219, 86, 86);
 
---blu-box-shadow: 0px 0px 15px 13px rgb(56, 139, 255);
---blu-background-color: rgb(110, 255, 243);
+--blu-hover-box-shadow: 0px 0px 15px 13px rgb(56, 139, 255);
+--blu-hover-background-color: rgb(110, 255, 243);
 --blu-box-shadow: 0px 0px 10px 2px rgb(78, 155, 208);
 --blu-background-color: rgb(86, 219, 208);
 
---green-box-shadow: 0px 0px 15px 13px rgb(71, 131, 86);
---green-background-color: rgb(138, 254, 86);
+--green-hover-box-shadow: 0px 0px 15px 13px rgb(71, 131, 86);
+--green-hover-background-color: rgb(138, 254, 86);
 --green-box-shadow: 0px 0px 10px 2px rgb(94, 175, 86);
 --green-background-color: rgb(102, 219, 86);
 
@@ -73,6 +73,18 @@ svg path, svg circle {
 --purple-background-color: rgb(146, 86, 219);
 --purple-hover-background-color: rgb(130, 76, 196);
 --purple-hover-box-shadow: 0px 0px 15px 13px rgb(115, 0, 255);
+
+--reset-hover-bg: rgb(255, 70, 70);
+--reset-hover-box-shadow:0px 0px 15px 13px rgb(255, 0, 0);
+--reset-background-color: rgb(255, 40, 40);
+--reset-box-shadow: 0px 0px 15px 3px rgb(255, 30, 30);
+
+--save-background-color: rgb(40, 255, 40);
+--save-box-shadow:0px 0px 15px 3px rgb(30, 255, 30);
+--save-hover-bg: rgb(60, 255, 60);
+--save-hover-box-shadow:0px 0px 15px 13px rgb(0, 255, 0);
+
+--name-input-box-shadow:0px 0px 15px 5px green;
 }
 
 .light-mode {

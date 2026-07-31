@@ -38,7 +38,6 @@
 
 
 .home{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -50,7 +49,6 @@
 
 }
 .home_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -73,7 +71,6 @@
 
 
 .game{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -87,7 +84,6 @@
 .game_mini{
     text-decoration: none;
     color: black;
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -108,7 +104,6 @@
 
 
 .programs{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -122,7 +117,6 @@
 .programs_mini{
     text-decoration: none;
     color: black;
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -143,7 +137,6 @@
 
 
 .achivment{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -157,7 +150,6 @@
 .achivment_mini{
     text-decoration: none;
     color: black;
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -178,7 +170,6 @@
 
 
 .myguides{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -192,7 +183,6 @@
 .myguides_mini{
     text-decoration: none;
     color: black;
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -213,7 +203,6 @@
 
 
 .settings{
-    borde: 1px solid red;
     height: calc(100%/6);;
     width: 100%;
     display: flex;
@@ -227,7 +216,6 @@
 .settings_mini{
     text-decoration: none;
     color: black;
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;

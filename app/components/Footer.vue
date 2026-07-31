@@ -6,14 +6,13 @@
 
 <style scoped>
 .divi {
-  borde: 2px solid red;
   height: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 span {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 255, 255);
   text-shadow:var(--text-shadow);
   font-weight: 600;
 }

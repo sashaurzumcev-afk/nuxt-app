@@ -1,6 +1,6 @@
 <template>
   <div class="divi">
-    <NuxtLink to="/" class="raft"exact-active-class="active-link"></NuxtLink>
+    <NuxtLink to="/" class="mini_divi"exact-active-class="active-link"></NuxtLink>
     <NuxtLink to="/" class="mini_divi"exact-active-class="active-link"></NuxtLink>
     <NuxtLink to="/" class="mini_divi"exact-active-class="active-link"></NuxtLink>
     <NuxtLink to="/" class="mini_divi"exact-active-class="active-link"></NuxtLink>
@@ -45,15 +45,6 @@
     width: 90%;
     height: 100%;
     background-image: url(/image/вопрос.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.raft{
-    borde: 2px solid red;
-    width: 90%;
-    height: 100%;
-    background-image: url(/image/рафт.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

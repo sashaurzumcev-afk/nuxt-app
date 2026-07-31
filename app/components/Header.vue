@@ -30,7 +30,6 @@
 
 <style scoped>
 .divi{
-    borde: 2px solid blue;
     height: 9%;
     display: flex;
     
@@ -38,7 +37,6 @@
 
 
 .create{
-    borde: 1px solid red;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -48,7 +46,6 @@
 
 }
 .create_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
@@ -71,7 +68,6 @@
 
 
 .yved{
-    borde: 1px solid greenyellow;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -83,7 +79,6 @@
     color: black;
 }
 .yved_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
@@ -106,7 +101,6 @@
 
 
 .izbr{
-    borde: 1px solid red;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -118,7 +112,6 @@
     color: black;
 }
 .izbr_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
@@ -141,7 +134,6 @@
 
 
 .search{
-    borde: 1px solid red;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -151,7 +143,6 @@
     border-left: var(--border-left);
 }
 .search_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 90%;
@@ -185,7 +176,6 @@
 
 
 .time{
-    borde: 1px solid greenyellow;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -195,7 +185,6 @@
     border-left: var(--border-left);
 }
 .time_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
@@ -216,7 +205,6 @@
 
 
 .profil{
-    borde: 1px solid greenyellow;
     height: 100%;
     width: calc(100%/6);
     display: flex;
@@ -227,7 +215,6 @@
     color: black;
 }
 .profil_mini{
-    borde: 1px solid blue;
     border-radius: 10px;
     height: 70%;
     width: 70%;
