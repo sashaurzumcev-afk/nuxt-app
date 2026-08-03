@@ -18,14 +18,13 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     borde: 2px solid white;
     width: 100%;
     height: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 .mini_divi{
     width: 90%;
@@ -34,8 +33,8 @@
 .avatar{
   width: 100%;
   height: 24%;
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 30px;
 }
 .avatar span{
@@ -54,8 +53,8 @@
 .name{
   width: 100%;
   height: 19%;
-  display: flex;
-  align-items: center;
+ display: var(--flex);
+  align-items: var(--centre);
   gap: 30px;
 }
 .name span{
@@ -96,8 +95,8 @@
 .date{
   width: 100%;
   height: 19%;
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 30px;
 }
 .date span{
@@ -114,9 +113,7 @@
   box-shadow: var(--name-input-box-shadow);
 }
 .profil{
-display: flex;
-align-items: center;
-justify-content: center;
+@include flex;
 height: 19%;
 text-decoration: none;
 color: black;
@@ -127,9 +124,7 @@ color: black;
     height: 50%;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }

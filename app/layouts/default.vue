@@ -16,7 +16,7 @@
 
 <style scoped>
 .glav_cont {
-  display: flex;
+  display: var(--flex);
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -27,7 +27,7 @@
 }
 .right {
   flex: 1;
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   background: var(--bg-primary);
 }

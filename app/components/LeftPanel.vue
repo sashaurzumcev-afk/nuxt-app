@@ -28,7 +28,8 @@
 </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     height: 100%;
     width: 100%;
@@ -39,9 +40,7 @@
 .home{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -52,9 +51,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--purple-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -72,9 +69,7 @@
 .game{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -87,9 +82,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--blue-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -105,9 +98,7 @@
 .programs{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -120,9 +111,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--red-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -138,9 +127,7 @@
 .achivment{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -153,9 +140,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--yellow-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -171,9 +156,7 @@
 .myguides{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -186,9 +169,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--green-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -204,9 +185,7 @@
 .settings{
     height: calc(100%/6);;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     text-decoration: none;
     color: black;
@@ -219,9 +198,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--blu-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 20px;
     font-weight: 600;

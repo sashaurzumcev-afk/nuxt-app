@@ -25,14 +25,13 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     borde: 2px solid white;
     width: 100%;
     height: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 .mini_divi{
     width: 90%;
@@ -46,8 +45,8 @@
 .name{
   width: 100%;
   height: calc(100%/6);
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 20px;
 }
 .name span{
@@ -67,8 +66,8 @@
 .opis{
   width: 100%;
   height: calc(100%/6);
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 20px;
 }
 .opis span{
@@ -88,8 +87,8 @@
 .foto{
   width: 100%;
   height: 20%;
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 15px;
 }
 .foto span{
@@ -106,8 +105,8 @@
 .video{
   width: 100%;
   height: 20%;
-  display: flex;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
   gap: 15px;
 }
 .video span{
@@ -124,8 +123,8 @@
 .category{
     width: 100%;
     height: calc(27%/2);
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .category span{
@@ -141,9 +140,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .category_programs{
@@ -153,9 +150,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ @include flex;
   background-color: rgb(101, 122, 115);
 }
 .category_achivment{
@@ -165,16 +160,14 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .complexity{
     width: 100%;
     height: calc(27%/2);
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .complexity span{
@@ -190,9 +183,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .complexity_middle{
@@ -202,9 +193,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .complexity_hard{
@@ -214,9 +203,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 
@@ -228,9 +215,7 @@
 }
 .save{
   width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 .save_button{
     border-radius: 25px;
@@ -238,9 +223,7 @@
     height: 60%;
     background-color: var(--save-background-color);
     box-shadow: var(--save-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }
@@ -251,9 +234,7 @@
 }
 .opyb{
   width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 .opyb_button{
     border-radius: 25px;
@@ -261,9 +242,7 @@
     height: 60%;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }
@@ -274,9 +253,7 @@
 }
 .nazad{
   width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 .nazad_button{
   border-radius: 25px;
@@ -284,9 +261,7 @@
     height: 60%;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }

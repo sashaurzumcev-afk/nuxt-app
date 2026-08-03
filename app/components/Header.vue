@@ -28,20 +28,18 @@
 </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     height: 9%;
     display: flex;
-    
 }
 
 
 .create{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
 
 }
@@ -50,9 +48,7 @@
     height: 70%;
     width: 70%;
     background-color: var(--purple-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
@@ -70,9 +66,7 @@
 .yved{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     border-left: var(--border-left);
     text-decoration: none;
@@ -83,9 +77,7 @@
     height: 70%;
     width: 70%;
     background-color: var(--yellow-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
@@ -103,9 +95,7 @@
 .izbr{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     border-left: var(--border-left);
     text-decoration: none;
@@ -116,9 +106,7 @@
     height: 70%;
     width: 70%;
     background-color: var(--red-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
@@ -136,9 +124,7 @@
 .search{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     border-left: var(--border-left);
 }
@@ -147,9 +133,7 @@
     height: 70%;
     width: 90%;
     background-color: var(--blu-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     padding: 3px;
     font-size: 25px;
     font-weight: 400;
@@ -178,9 +162,7 @@
 .time{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-right: var(--border-right);
     border-left: var(--border-left);
 }
@@ -189,9 +171,7 @@
     height: 70%;
     width: 70%;
     background-color: var(--blue-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;
@@ -207,9 +187,7 @@
 .profil{
     height: 100%;
     width: calc(100%/6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-left: var(--border-left);
     text-decoration: none;
     color: black;
@@ -219,9 +197,7 @@
     height: 70%;
     width: 70%;
     background-color: var(--green-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     gap: 10px;
     font-size: 25px;
     font-weight: 400;

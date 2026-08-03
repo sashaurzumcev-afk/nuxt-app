@@ -39,9 +39,12 @@ html, body {
 svg path, svg circle {
   fill: none !important;
 }
-.root:root{
 
+:root{
+--centre: center;
+--flex:flex;
 }
+
 .dark-mode {
 --border: 1px solid white;
 --glav-bg:rgb(7, 5, 10);

@@ -6,19 +6,18 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     width: 100%;
     height: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 .mini_divi{
     width: 90%;
     height: 100%;
     font-size: 70px;
-    text-align: center;
+    text-align: var(--centre);
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(2, 255, 255);
@@ -32,8 +31,7 @@
   }
   .mini_divi{
     height: 50%;
-    align-items: center;
-    justify-content: center;
+    @include flex;
   }
   span {
     font-size: 14px;

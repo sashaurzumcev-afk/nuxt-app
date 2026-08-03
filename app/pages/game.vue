@@ -26,14 +26,13 @@
     <NuxtLink to="/" class="mini_divi"exact-active-class="active-link"></NuxtLink>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     borde: 2px solid white;
     width: 100%;
     height: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);

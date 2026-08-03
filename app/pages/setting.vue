@@ -27,18 +27,17 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi{
     width: 100%;
     height: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 .mini_divi{
     width: 90%;
     height: 100%;
-    display: flex;
+    display: var(--flex);
     flex-direction: column;
 }
 
@@ -51,8 +50,8 @@
     width: 90%;
     height: 35%;
     margin-bottom: 25px;
-    display: flex;
-    align-items: center;
+   display: var(--flex);
+  align-items: var(--centre);
     gap: 20px;
 }
 .avatar{
@@ -70,9 +69,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 
 }
@@ -86,8 +83,8 @@
     width: 90%;
     height: 15%;
     margin-bottom: 25px;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .name span{
@@ -111,17 +108,15 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .email{
     width: 90%;
     height: 15%;
     margin-bottom: 25px;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .email span{
@@ -145,16 +140,14 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .password{
     width: 90%;
     height: 15%;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .password span{
@@ -178,9 +171,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 
@@ -192,8 +183,8 @@
 .font_size{
     width: 90%;
     height: 25%;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .font_size span{
@@ -209,9 +200,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .font-size_15{
@@ -221,9 +210,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .font-size_20{
@@ -233,9 +220,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .density{
@@ -258,9 +243,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .density_18{
@@ -270,9 +253,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .density_24{
@@ -282,16 +263,14 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .on_of_notify{
     width: 90%;
     height: 25%;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .on_of_notify span{
@@ -307,9 +286,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .notify_off{
@@ -319,16 +296,14 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .language{
     width: 90%;
     height: 25%;
-    display: flex;
-    align-items: center;
+    display: var(--flex);
+  align-items: var(--centre);
     gap: 15px;
 }
 .language span{
@@ -344,9 +319,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 .Language_en{
@@ -356,9 +329,7 @@
   border: none;
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   background-color: rgb(101, 122, 115);
 }
 
@@ -366,9 +337,9 @@
 .down_mini_divi{
   width: 100%;
   height: 14%;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
+  display: var(--flex);
+  align-items: var(--centre);
 }
 .reset_settings{
     border-radius: 25px;
@@ -376,9 +347,7 @@
     height: 40%;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }
@@ -393,9 +362,7 @@
     height: 40%;
     background-color: var(--save-background-color);
     box-shadow: var(--save-box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-size: 30px;
     font-weight: 600;
 }

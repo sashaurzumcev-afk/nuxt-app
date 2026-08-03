@@ -4,12 +4,11 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '~/assets/mixins' as *;
 .divi {
   height: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 span {
   color: rgb(0, 255, 255);
