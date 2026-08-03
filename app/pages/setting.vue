@@ -404,4 +404,103 @@
   box-shadow: var(--save-hover-box-shadow);
   border: var(--border);
 }
+@media (max-width: 1000px){
+.language span{
+  font-size: 20px;
+}
+.Language_ru{
+  width: 40px;
+}
+.Language_en{
+  width: 40px;
+}
+
+.on_of_notify span{
+  font-size: 20px;
+}
+.notify_on{
+  width: 40px;
+}
+.notify_off{
+  width: 45px;
+}
+
+.density span{
+  font-size: 20px;
+}
+.density_12{
+  width: 40px;
+}
+.density_18{
+  width: 40px;
+}
+.density_24{
+  width: 40px;
+}
+
+.font_size span{
+  font-size: 20px;
+}
+.font-size_10{
+   width: 35px;
+}
+.font-size_15{
+    width: 35px;
+}
+.font-size_20{
+    width: 35px;
+}
+
+.password span{
+  font-size: 20px;
+}
+.password input{
+  width: 100px;
+}
+.password_enter{
+  width: 70px;
+}
+.up_mini_divi{
+  margin-bottom: 20px;
+}
+
+.email span{
+  font-size: 20px;
+}
+.email input{
+  width: 100px;
+}
+.email_enter{
+  width: 70px;
+}
+
+.name span{
+  font-size: 20px;
+}
+.name input{
+  width: 100px;
+}
+.name_enter{
+  width: 70px;
+}
+.swich_avatar{
+    width: 90%;
+    height: 35%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.avatar{
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+}
+.avatar_smen{
+  width: 95px;
+}
+.avatar_smen span{
+  font-size: 20px;
+}
+}
 </style>

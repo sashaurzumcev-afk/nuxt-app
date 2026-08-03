@@ -2,7 +2,7 @@
 <header class="divi">
 
     <div class="create">
-        <NuxtLink to="/create" class="create_mini"exact-active-class="active-link"><SvgoCreate />Create</NuxtLink>
+        <NuxtLink to="/create" class="create_mini"exact-active-class="active-link"><SvgoCreate /><span>Create</span></NuxtLink>
     </div>
 
     <div class="yved">
@@ -235,7 +235,51 @@
     border: var(--border);
 }
 
-
+@media (max-width: 1000px){
+    .create_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .yved_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .izbr_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .izbr_mini{
+        gap: 0px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .search_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .search_mini input{
+        width: 40px;
+    }
+    .search_mini ::placeholder{
+        font-weight: 600;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .time_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .profil_mini{
+        gap: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
 </style>
 
 <script setup>

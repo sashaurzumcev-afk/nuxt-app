@@ -1,9 +1,7 @@
 <template>
   <div class="divi">
     <div class="mini_divi">
-        <br>
         <span>Добро пожаловать на Siriosly Guides! </span><br>
-        <br>
         <span>Гайды, которые действительно работают. Игры, программы, достижения — каждую тему до мелочей. Выбирай раздел слева и прокачивай навыки сейчас. Приятного изучения!</span>
     </div>
   </div>
@@ -27,6 +25,19 @@
     text-shadow:var(--text-shadow);
     font-weight: 600;
 }
-.mini_divi span{
+@media (max-width: 1000px) {
+  .divi {
+    padding: 8px 12px;
+    line-height: 20px;
+  }
+  .mini_divi{
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 </style>

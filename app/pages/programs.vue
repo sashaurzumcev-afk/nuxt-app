@@ -58,4 +58,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 1000px){
+  .divi{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 </style>

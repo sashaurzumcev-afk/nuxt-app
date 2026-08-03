@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Здесь можно оставить пустым или добавить импорты при необходимости
 </script>
 
 <template>
@@ -31,5 +30,11 @@
   display: flex;
   flex-direction: column;
   background: var(--bg-primary);
+}
+@media (max-width: 1000px){
+  .left {
+  height: 100%;
+  width: 60px;
+}
 }
 </style>

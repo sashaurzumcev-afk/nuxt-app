@@ -18,14 +18,14 @@ html, body {
     overflow: hidden;
 }
 .left{
-    borde: 2px solid blue;
     height: 100%;
-    width: 7%;
+    width: 3%;
 }
 .right{
-    flex: 1;
+    width: 325px;
     display: flex;
     flex-direction: column;
+    border-left: var(--border-right);
 }
 .page-content {
     flex: 1;
@@ -33,9 +33,14 @@ html, body {
     padding: 20px;
     box-sizing: border-box;
 }
+@media (max-width: 370px){
 
+}
 svg path, svg circle {
   fill: none !important;
+}
+.root:root{
+
 }
 .dark-mode {
 --border: 1px solid white;

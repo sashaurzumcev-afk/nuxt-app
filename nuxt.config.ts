@@ -19,5 +19,10 @@ export default defineNuxtConfig({
     fallback: 'dark',
     classSuffix: '-mode',
     storageKey: 'color-mode'
+  },
+  nitro: {
+    prerender: {
+      failOnError: false
+    }
   }
 })

@@ -30,7 +30,6 @@
 
 <style scoped>
 .divi{
-    borde: 2px solid red;
     height: 100%;
     width: 100%;
     border-right: var(--border-right);
@@ -233,7 +232,65 @@
     background-color: var(--blu-hover-background-color);
     border: var(--border);
 }
+@media (max-width: 1000px){
+    .divi{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .home{
+        border-right: 1px;
+    }
+    .home_mini{
+        font-size: 13px;
+        height: 60px;
+        width: 50px;
+    }
 
+    .game{
+        border-right: 1px;
+    }
+    .game_mini{
+        font-size: 13px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .programs{
+        border-right: 1px;
+    }
+    .programs_mini{
+        font-size: 10px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .achivment{
+        border-right: 1px;
+    }
+    .achivment_mini{
+        font-size: 10px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .myguides{
+        border-right: 1px;
+    }
+    .myguides_mini{
+        font-size: 10px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .settings{
+        border-right: 1px;
+    }
+    .settings_mini{
+        font-size: 10px;
+        height: 60px;
+        width: 50px;
+    }
+}
 </style>
 
 <script>

@@ -16,4 +16,14 @@ span {
   text-shadow:var(--text-shadow);
   font-weight: 600;
 }
+@media (max-width: 1000px) {
+  .divi {
+    height: auto;
+    padding: 8px 12px;
+  }
+  span {
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
 </style>

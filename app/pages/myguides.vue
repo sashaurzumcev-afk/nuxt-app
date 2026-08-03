@@ -1,13 +1,12 @@
 <template>
   <div class="divi">
-    <NuxtLink to="/myguidesfile/myguidesgame" class="mini_divi"exact-active-class="active-link"></NuxtLink>
-    <NuxtLink to="/myguidesfile/myguidesprograms" class="mini_divi"exact-active-class="active-link"></NuxtLink>
-    <NuxtLink to="/myguidesfile/myguidesachivment" class="mini_divi"exact-active-class="active-link"></NuxtLink>
+    <NuxtLink to="/myguidesfile/myguidesgame" class="game"exact-active-class="active-link">Game</NuxtLink>
+    <NuxtLink to="/myguidesfile/myguidesprograms" class="programs"exact-active-class="active-link">Programs</NuxtLink>
+    <NuxtLink to="/myguidesfile/myguidesachivment" class="achivment"exact-active-class="active-link">Achivment</NuxtLink>
   </div>
 </template>
 <style scoped>
 .divi{
-    borde: 2px solid white;
     width: 100%;
     height: 88%;
     display: flex;
@@ -19,14 +18,68 @@
     grid-column-gap: 0px;
     grid-row-gap: 10px;
 }
-.mini_divi{
-    borde: 2px solid red;
+.game{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 70%;
     width: 90%;
-    height: 100%;
-    background-image: url(/image/вопрос.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: var(--blue-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    box-shadow:var(--blue-box-shadow);
+}
+.programs{
+  text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 70%;
+    width: 90%;
+    background-color: var(--red-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    box-shadow: var(--red-box-shadow);
+}
+.achivment{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 70%;
+    width: 90%;
+    background-color: var(--yellow-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    box-shadow: var(--yellow-box-shadow);
 }
 
+@media (max-width: 1000px){
+  .divi{
+    width: 321px;
+    padding-left: 10px;
+  }
+  .game{
+    height: 200px;
+    font-size: 15px;
+  }
+  .programs{
+    height: 200px;
+    font-size: 15px;
+  }
+  .achivment{
+    height: 200px;
+    font-size: 15px;
+  }
+}
 </style>
