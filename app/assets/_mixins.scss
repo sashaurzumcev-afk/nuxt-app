@@ -3,3 +3,153 @@
     justify-content: var(--centre);
     align-items: var(--centre);
 }
+@mixin span-setting{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow:var(--text-shadow);
+    color: rgb(0, 255, 255);
+}
+@mixin input-setting{
+    font-size: 25px;
+    width: 20%;
+    height: 80%;
+    border: none;
+    box-shadow: var(--name-input-box-shadow);
+    border-radius: 17px;
+}
+@mixin enter-setting{
+    font-size: 25px;
+    width: 7%;
+    height: 60%;
+    border: none;
+    box-shadow: var(--name-input-box-shadow);
+    border-radius: 17px;
+    @include flex;
+    background-color: rgb(101, 122, 115);
+}
+@mixin bigi{
+    height: 100%;
+    width: calc(100%/6);
+    @include flex;
+}
+@mixin bigi2{
+    height: calc(100%/6);;
+    width: 100%;
+    @include flex;
+}
+@mixin bigi3{
+    width: 100%;
+  height: 24%;
+  display: var(--flex);
+  align-items: var(--centre);
+  gap: 30px;
+}
+@mixin mini{
+    border-radius: 10px;
+    height: 70%;
+    width: 70%;
+    @include flex;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+@mixin mini2{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 70%;
+    width: 90%;
+    @include flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+@mixin mini3{
+    border: 1px solid greenyellow;
+  width: 15%;
+  height: 55%;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: var(--name-input-box-shadow);
+}
+@mixin media-header{
+    gap: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+@mixin media-leftpanel{
+    font-size: 10px;
+    height: 60px;
+    width: 50px;
+}
+@mixin create-button{
+    border-radius: 25px;
+    width: 80%;
+    height: 60%;
+    @include flex;
+    font-size: 30px;
+    font-weight: 600;
+}
+@mixin create-complexity{
+    font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  border-radius: 17px;
+  @include flex;
+  box-shadow: var(--name-input-box-shadow);
+  background-color: rgb(101, 122, 115);
+}
+@mixin media-notify{
+    height: 200px;
+    font-size: 15px;
+}
+@mixin notify-favourite{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 70%;
+    width: 90%;
+    @include flex;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+@mixin button-settings{
+    border-radius: 25px;
+    width: 45%;
+    height: 40%;
+    @include flex;
+    font-size: 30px;
+    font-weight: 600;
+}
+@mixin language{
+    font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  @include flex;
+  background-color: rgb(101, 122, 115);
+}
+@mixin fontsize_density_button{
+   font-size: 25px;
+  width: 5%;
+  height: 30%;
+  border: none;
+  box-shadow: var(--name-input-box-shadow);
+  border-radius: 17px;
+  @include flex;
+  background-color: rgb(101, 122, 115);
+}
+@mixin on_of_notify_density_font_size{
+   width: 90%;
+    height: 25%;
+    display: var(--flex);
+  align-items: var(--centre);
+    gap: 15px;
+}

@@ -22,20 +22,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(2, 255, 255);
     text-shadow:var(--text-shadow);
-    font-weight: 600;
 }
 @media (max-width: 1000px) {
   .divi {
     padding: 8px 12px;
-    line-height: 20px;
+    line-height: 15px;
   }
   .mini_divi{
     height: 50%;
-    @include flex;
   }
   span {
     font-size: 14px;
-    font-weight: 600;
   }
 }
 </style>

@@ -11,9 +11,8 @@
   @include flex;
 }
 span {
-  color: rgb(0, 255, 255);
-  text-shadow:var(--text-shadow);
-  font-weight: 600;
+  @include span-setting;
+  font-size: 17px !important;
 }
 @media (max-width: 1000px) {
   .divi {
@@ -21,7 +20,7 @@ span {
     padding: 8px 12px;
   }
   span {
-    font-size: 10px;
+    font-size: 10px !important;
     font-weight: 400;
   }
 }

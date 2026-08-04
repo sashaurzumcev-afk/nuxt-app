@@ -38,26 +38,14 @@
 
 
 .home{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .home_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--purple-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow: var(--purple-box-shadow);
-    text-decoration: none;
-    color: black;
 }
 .home_mini:hover{
     box-shadow: var(--purple-hover-box-shadow);
@@ -67,25 +55,13 @@
 
 
 .game{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .game_mini{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--blue-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow:var(--blue-box-shadow);
 }
 .game_mini:hover{
@@ -96,25 +72,13 @@
 
 
 .programs{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .programs_mini{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--red-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow: var(--red-box-shadow);
 }
 .programs_mini:hover{
@@ -125,25 +89,13 @@
 
 
 .achivment{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .achivment_mini{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--yellow-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow: var(--yellow-box-shadow);
 }
 .achivment_mini:hover{
@@ -154,25 +106,13 @@
 
 
 .myguides{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .myguides_mini{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--green-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow: var(--green-box-shadow);
 }
 .myguides_mini:hover{
@@ -183,25 +123,13 @@
 
 
 .settings{
-    height: calc(100%/6);;
-    width: 100%;
-    @include flex;
+    @include bigi2;
     border-right: var(--border-right);
-    text-decoration: none;
-    color: black;
 
 }
 .settings_mini{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include mini2;
     background-color: var(--blu-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
     box-shadow:var(--blu-box-shadow);
 }
 .settings_mini:hover{
@@ -218,54 +146,44 @@
         border-right: 1px;
     }
     .home_mini{
-        font-size: 13px;
-        height: 60px;
-        width: 50px;
+        font-size: 13px !important;
+        @include media-leftpanel;
     }
 
     .game{
         border-right: 1px;
     }
     .game_mini{
-        font-size: 13px;
-        height: 60px;
-        width: 50px;
+        font-size: 13px !important;
+        @include media-leftpanel;
     }
 
     .programs{
         border-right: 1px;
     }
     .programs_mini{
-        font-size: 10px;
-        height: 60px;
-        width: 50px;
+        @include media-leftpanel;
     }
 
     .achivment{
         border-right: 1px;
     }
     .achivment_mini{
-        font-size: 10px;
-        height: 60px;
-        width: 50px;
+        @include media-leftpanel;
     }
 
     .myguides{
         border-right: 1px;
     }
     .myguides_mini{
-        font-size: 10px;
-        height: 60px;
-        width: 50px;
+        @include media-leftpanel;
     }
 
     .settings{
         border-right: 1px;
     }
     .settings_mini{
-        font-size: 10px;
-        height: 60px;
-        width: 50px;
+        @include media-leftpanel;
     }
 }
 </style>

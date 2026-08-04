@@ -37,24 +37,13 @@
 
 
 .create{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-right: var(--border-right);
-
 }
 .create_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    @include mini;
     background-color: var(--purple-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow: var(--purple-box-shadow);
-    text-decoration: none;
-    color: black;
 }
 .create_mini:hover{
     box-shadow: var(--purple-hover-box-shadow);
@@ -64,26 +53,14 @@
 
 
 .yved{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-right: var(--border-right);
     border-left: var(--border-left);
-    text-decoration: none;
-    color: black;
 }
 .yved_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    @include mini;
     background-color: var(--yellow-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow:var(--yellow-box-shadow);
-    text-decoration: none;
-    color: black;
 }
 .yved_mini:hover{
     box-shadow: var(--yellow-hover-box-shadow);
@@ -93,26 +70,14 @@
 
 
 .izbr{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-right: var(--border-right);
     border-left: var(--border-left);
-    text-decoration: none;
-    color: black;
 }
 .izbr_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    @include mini;
     background-color: var(--red-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow: var(--red-box-shadow);
-    text-decoration: none;
-    color: black;
 }
 .izbr_mini:hover{
     box-shadow: var(--red-hover-box-shadow);
@@ -122,21 +87,14 @@
 
 
 .search{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-right: var(--border-right);
     border-left: var(--border-left);
 }
 .search_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    width: 90% !important;
+    @include mini;
     background-color: var(--blu-background-color);
-    @include flex;
-    padding: 3px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow: var(--blu-box-shadow);
 }
 .search_mini:hover{
@@ -160,21 +118,13 @@
 
 
 .time{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-right: var(--border-right);
     border-left: var(--border-left);
 }
 .time_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    @include mini;
     background-color: var(--blue-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow: var(--blue-box-shadow);
 }
 .time_mini:hover{
@@ -185,25 +135,13 @@
 
 
 .profil{
-    height: 100%;
-    width: calc(100%/6);
-    @include flex;
+    @include bigi;
     border-left: var(--border-left);
-    text-decoration: none;
-    color: black;
 }
 .profil_mini{
-    border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    @include mini;
     background-color: var(--green-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: 400;
     box-shadow: var(--green-box-shadow);
-    text-decoration: none;
-    color: black;
 }
 .profil_mini:hover{
     box-shadow: var(--green-hover-box-shadow);
@@ -213,29 +151,20 @@
 
 @media (max-width: 1000px){
     .create_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
     .yved_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
     .izbr_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
     .izbr_mini{
-        gap: 0px;
-        font-size: 10px;
-        font-weight: 600;
+        @include media-header;
+        font-size: 10px !important;
     }
     .search_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
     .search_mini input{
         width: 40px;
@@ -246,14 +175,10 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .time_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
     .profil_mini{
-        gap: 0px;
-        font-size: 15px;
-        font-weight: 600;
+        @include media-header;
     }
 }
 </style>

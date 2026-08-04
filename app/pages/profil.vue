@@ -31,17 +31,10 @@
     height: 100%;
 }
 .avatar{
-  width: 100%;
-  height: 24%;
-  display: var(--flex);
-  align-items: var(--centre);
-  gap: 30px;
+  @include bigi3;
 }
 .avatar span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .avatar_mini{
   border: 1px solid greenyellow;
@@ -51,66 +44,36 @@
 }
 
 .name{
-  width: 100%;
-  height: 19%;
- display: var(--flex);
-  align-items: var(--centre);
-  gap: 30px;
+  @include bigi3;
+  height: 19% !important;
 }
 .name span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .name_mini{
-  border: 1px solid greenyellow;
-  width: 15%;
-  height: 55%;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: var(--name-input-box-shadow);
+  @include mini3;
 }
 .statys{
-  width: 100%;
-  height: 19%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  @include bigi3;
+  height: 19% !important;
 }
 .statys span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .statys_mini{
-  border: 1px solid greenyellow;
-  width: 15%;
-  height: 55%;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: var(--name-input-box-shadow);
+  @include mini3;
 }
 .date{
-  width: 100%;
-  height: 19%;
-  display: var(--flex);
-  align-items: var(--centre);
-  gap: 30px;
+  @include bigi3;
+  height: 19% !important;
 }
 .date span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .date_mini{
-  width: 10%;
-  height: 25%;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: var(--name-input-box-shadow);
+  width: 10% !important;
+  height: 25% !important;
+  @include mini3;
 }
 .profil{
 @include flex;

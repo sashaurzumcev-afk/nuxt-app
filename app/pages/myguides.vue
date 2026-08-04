@@ -18,42 +18,18 @@
     grid-row-gap: 10px;
 }
 .game{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include notify-favourite;
     background-color: var(--blue-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 50px;
-    font-weight: 600;
     box-shadow:var(--blue-box-shadow);
 }
 .programs{
-  text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+  @include notify-favourite;
     background-color: var(--red-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 50px;
-    font-weight: 600;
     box-shadow: var(--red-box-shadow);
 }
 .achivment{
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    height: 70%;
-    width: 90%;
+    @include notify-favourite;
     background-color: var(--yellow-background-color);
-    @include flex;
-    gap: 10px;
-    font-size: 50px;
-    font-weight: 600;
     box-shadow: var(--yellow-box-shadow);
 }
 
@@ -63,16 +39,13 @@
     padding-left: 10px;
   }
   .game{
-    height: 200px;
-    font-size: 15px;
+    @include media-notify;
   }
   .programs{
-    height: 200px;
-    font-size: 15px;
+    @include media-notify;
   }
   .achivment{
-    height: 200px;
-    font-size: 15px;
+    @include media-notify;
   }
 }
 </style>

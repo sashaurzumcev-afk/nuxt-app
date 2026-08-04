@@ -56,7 +56,7 @@
 }
 .avatar{
   box-shadow: var(--name-input-box-shadow);
-  border: 1px solid blue;
+  border: 1px solid greenyellow;
   background-color: white;
   border-radius:60px;
   width: 120px;
@@ -74,105 +74,48 @@
 
 }
 .avatar_smen span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .name{
-    width: 90%;
+    @include on_of_notify_density_font_size;
     height: 15%;
     margin-bottom: 25px;
-    display: var(--flex);
-  align-items: var(--centre);
-    gap: 15px;
 }
 .name span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .name input{
-  font-size: 25px;
-  width: 20%;
-  height: 80%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
+  @include input-setting;
 }
 .name_enter{
-  font-size: 25px;
-  width: 7%;
-  height: 60%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include enter-setting;
 }
 .email{
-    width: 90%;
-    height: 15%;
+    @include on_of_notify_density_font_size;
+    height: 15% !important;
     margin-bottom: 25px;
-    display: var(--flex);
-  align-items: var(--centre);
-    gap: 15px;
 }
 .email span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .email input{
-  font-size: 25px;
-  width: 20%;
-  height: 80%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
+  @include input-setting;
 }
 .email_enter{
-  font-size: 25px;
-  width: 7%;
-  height: 60%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include enter-setting;
 }
 .password{
-    width: 90%;
-    height: 15%;
-    display: var(--flex);
-  align-items: var(--centre);
-    gap: 15px;
+    @include on_of_notify_density_font_size;
+    height: 15% !important;
 }
 .password span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .password input{
-  font-size: 25px;
-  width: 20%;
-  height: 80%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
+  @include input-setting;
 }
 .password_enter{
-  font-size: 25px;
-  width: 7%;
-  height: 60%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include enter-setting;
 }
 
 
@@ -181,123 +124,46 @@
   height: 43%;
 }
 .font_size{
-    width: 90%;
-    height: 25%;
-    display: var(--flex);
-  align-items: var(--centre);
-    gap: 15px;
+  @include on_of_notify_density_font_size;
 }
 .font_size span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .font-size_10{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .font-size_15{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .font-size_20{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .density{
-    width: 90%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    @include on_of_notify_density_font_size;
 }
 .density span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .density_12{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .density_18{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .density_24{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include fontsize_density_button;
 }
 .on_of_notify{
-    width: 90%;
-    height: 25%;
-    display: var(--flex);
-  align-items: var(--centre);
-    gap: 15px;
+  @include on_of_notify_density_font_size;
 }
 .on_of_notify span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .notify_on{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+ @include language;
 }
 .notify_off{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include language;
 }
 .language{
     width: 90%;
@@ -307,30 +173,13 @@
     gap: 15px;
 }
 .language span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .Language_ru{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include language;
 }
 .Language_en{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include language;
 }
 
 
@@ -342,14 +191,9 @@
   align-items: var(--centre);
 }
 .reset_settings{
-    border-radius: 25px;
-    width: 45%;
-    height: 40%;
+    @include button-settings;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    @include flex;
-    font-size: 30px;
-    font-weight: 600;
 }
 .reset_settings:hover{
   background-color: var(--reset-hover-bg);
@@ -357,14 +201,9 @@
   box-shadow: var(--reset-hover-box-shadow);
 }
 .save_settings{
-    border-radius: 25px;
-    width: 45%;
-    height: 40%;
+    @include button-settings;
     background-color: var(--save-background-color);
     box-shadow: var(--save-box-shadow);
-    @include flex;
-    font-size: 30px;
-    font-weight: 600;
 }
 .save_settings:hover{
   background-color: var(--save-hover-bg);

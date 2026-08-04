@@ -7,7 +7,7 @@
         <div class="foto"><span>Image:</span><div class="foto_img"></div></div>
         <div class="video"><span>Video:</span><div class="video_video"></div></div>
         <div class="category"><span>Category:</span><div class="category_game"><span>game</span></div><div class="category_programs"><span>programs</span></div><div class="category_achivment"><span>achivment</span></div></div>
-        <div class="complexity"><span>Complexity:</span><div class="complexity_easy"><span>easy</span></div><div class="complexity_middle"><span>middle</span></div><div class="complexity_hard"><span>hard</span></div></div>
+        <div class="complexity"><span>Complexity:</span><div class="complexity_easy"><span>easy</span></div><div class="complexity_middle"><span>mid</span></div><div class="complexity_hard"><span>hard</span></div></div>
       </div>
 
       <div class="down">
@@ -28,7 +28,6 @@
 <style scoped lang="scss">
 @use '~/assets/mixins' as *;
 .divi{
-    borde: 2px solid white;
     width: 100%;
     height: 88%;
     @include flex;
@@ -50,10 +49,7 @@
   gap: 20px;
 }
 .name span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .name input{
   font-size: 25px;
@@ -71,10 +67,7 @@
   gap: 20px;
 }
 .opis span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .opis input{
   font-size: 25px;
@@ -92,10 +85,7 @@
   gap: 15px;
 }
 .foto span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .foto_img{
    border: 1px solid blue;
@@ -110,10 +100,7 @@
   gap: 15px;
 }
 .video span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .video_video{
    border: 1px solid blue;
@@ -128,10 +115,7 @@
     gap: 15px;
 }
 .category span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .category_game{
   font-size: 25px;
@@ -164,47 +148,23 @@
   background-color: rgb(101, 122, 115);
 }
 .complexity{
-    width: 100%;
-    height: calc(27%/2);
-    display: var(--flex);
+  width: 100%;
+  height: calc(27%/2);
+  display: var(--flex);
   align-items: var(--centre);
-    gap: 15px;
+  gap: 15px;
 }
 .complexity span{
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow:var(--text-shadow);
-  color: rgb(0, 255, 255);
+  @include span-setting;
 }
 .complexity_easy{
-  font-size: 25px;
-  width: 5%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include create-complexity;
 }
 .complexity_middle{
-  font-size: 25px;
-  width: 9%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include create-complexity;
 }
 .complexity_hard{
-  font-size: 25px;
-  width: 9%;
-  height: 30%;
-  border: none;
-  box-shadow: var(--name-input-box-shadow);
-  border-radius: 17px;
-  @include flex;
-  background-color: rgb(101, 122, 115);
+  @include create-complexity;
 }
 
 
@@ -218,14 +178,9 @@
   @include flex;
 }
 .save_button{
-    border-radius: 25px;
-    width: 45%;
-    height: 60%;
+    @include create-button;
     background-color: var(--save-background-color);
     box-shadow: var(--save-box-shadow);
-    @include flex;
-    font-size: 30px;
-    font-weight: 600;
 }
 .save_button:hover{
   background-color: var(--save-hover-bg);
@@ -237,14 +192,9 @@
   @include flex;
 }
 .opyb_button{
-    border-radius: 25px;
-    width: 45%;
-    height: 60%;
+    @include create-button;
     background-color: var(--reset-background-color);
     box-shadow: var(--reset-box-shadow);
-    @include flex;
-    font-size: 30px;
-    font-weight: 600;
 }
 .opyb_button:hover{
   background-color: var(--reset-hover-bg);
@@ -256,14 +206,9 @@
   @include flex;
 }
 .nazad_button{
-  border-radius: 25px;
-    width: 80%;
-    height: 60%;
-    background-color: var(--reset-background-color);
-    box-shadow: var(--reset-box-shadow);
-    @include flex;
-    font-size: 30px;
-    font-weight: 600;
+  @include create-button;
+  background-color: var(--reset-background-color);
+  box-shadow: var(--reset-box-shadow);
 }
 .nazad_button:hover{
   background-color: var(--reset-hover-bg);
