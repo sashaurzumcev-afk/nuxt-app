@@ -29,7 +29,7 @@
 <style scoped lang="scss">
 @use '~/assets/mixins' as *;
 .divi{
-    borde: 2px solid white;
+    margin-left: calc(23px/2);
     width: 100%;
     height: 88%;
     @include flex;
@@ -40,7 +40,6 @@
     grid-row-gap: 10px;
 }
 .mini_divi{
-    borde: 2px solid red;
     width: 90%;
     height: 100%;
     background-image: url(/image/вопрос.jpg);

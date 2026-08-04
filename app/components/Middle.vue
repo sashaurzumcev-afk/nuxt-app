@@ -19,8 +19,9 @@
     font-size: 70px;
     text-align: var(--centre);
     font-weight: 600;
+    padding-top: 10%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(2, 255, 255);
+    color: var(--color);
     text-shadow:var(--text-shadow);
 }
 @media (max-width: 1000px) {

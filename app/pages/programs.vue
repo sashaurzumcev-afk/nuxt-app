@@ -29,6 +29,7 @@
 <style scoped lang="scss">
 @use '~/assets/mixins' as *;
 .divi{
+  margin-left: calc(23px/2);
     borde: 2px solid white;
     width: 100%;
     height: 88%;

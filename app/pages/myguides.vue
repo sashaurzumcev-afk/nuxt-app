@@ -8,6 +8,7 @@
 <style scoped lang="scss">
 @use '~/assets/mixins' as *;
 .divi{
+  margin-left: calc(57px/2);
     width: 100%;
     height: 88%;
     @include flex;

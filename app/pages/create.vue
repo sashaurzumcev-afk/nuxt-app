@@ -6,19 +6,19 @@
         <div class="opis"><span>Description:</span><input type="text"></div>
         <div class="foto"><span>Image:</span><div class="foto_img"></div></div>
         <div class="video"><span>Video:</span><div class="video_video"></div></div>
-        <div class="category"><span>Category:</span><div class="category_game"><span>game</span></div><div class="category_programs"><span>programs</span></div><div class="category_achivment"><span>achivment</span></div></div>
-        <div class="complexity"><span>Complexity:</span><div class="complexity_easy"><span>easy</span></div><div class="complexity_middle"><span>mid</span></div><div class="complexity_hard"><span>hard</span></div></div>
+        <div class="category"><span>Category:</span><div class="category_game"><span class="boxshadow">game</span></div><div class="category_programs"><span class="boxshadow">programs</span></div><div class="category_achivment"><span class="boxshadow">achivment</span></div></div>
+        <div class="complexity"><span>Complexity:</span><div class="complexity_easy"><span class="boxshadow">easy</span></div><div class="complexity_middle"><span class="boxshadow">mid</span></div><div class="complexity_hard"><span class="boxshadow">hard</span></div></div>
       </div>
 
       <div class="down">
         <div class="save">
-          <div class="save_button">Publick</div>
+          <div class="save_button boxshadow" @click=""><span>Publick</span></div>
         </div>
         <div class="opyb">
-          <div class="opyb_button">Save History</div>
+          <div class="opyb_button boxshadow">Save History</div>
         </div>
         <div class="nazad">
-          <div class="nazad_button">Back</div>
+          <div class="nazad_button boxshadow">Back</div>
         </div>
       </div>
       
@@ -27,6 +27,9 @@
 </template>
 <style scoped lang="scss">
 @use '~/assets/mixins' as *;
+.boxshadow{
+  text-shadow: none !important;
+}
 .divi{
     width: 100%;
     height: 88%;
@@ -125,7 +128,7 @@
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
   @include flex;
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 .category_programs{
   font-size: 25px;
@@ -135,7 +138,7 @@
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
  @include flex;
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 .category_achivment{
   font-size: 25px;
@@ -145,7 +148,7 @@
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
   @include flex;
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 .complexity{
   width: 100%;

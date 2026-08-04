@@ -7,7 +7,7 @@
     font-size: 25px;
     font-weight: 600;
     text-shadow:var(--text-shadow);
-    color: rgb(0, 255, 255);
+    color: var(--color);
 }
 @mixin input-setting{
     font-size: 25px;
@@ -25,7 +25,7 @@
     box-shadow: var(--name-input-box-shadow);
     border-radius: 17px;
     @include flex;
-    background-color: rgb(101, 122, 115);
+    background-color:var(--background-color-setting-create);
 }
 @mixin bigi{
     height: 100%;
@@ -67,7 +67,7 @@
     font-weight: 600;
 }
 @mixin mini3{
-    border: 1px solid greenyellow;
+  border: var(--border-profil);
   width: 15%;
   height: 55%;
   border-radius: 30px;
@@ -100,7 +100,7 @@
   border-radius: 17px;
   @include flex;
   box-shadow: var(--name-input-box-shadow);
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 @mixin media-notify{
     height: 200px;
@@ -134,7 +134,7 @@
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
   @include flex;
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 @mixin fontsize_density_button{
    font-size: 25px;
@@ -144,7 +144,7 @@
   box-shadow: var(--name-input-box-shadow);
   border-radius: 17px;
   @include flex;
-  background-color: rgb(101, 122, 115);
+  background-color: var(--background-color-setting-create);
 }
 @mixin on_of_notify_density_font_size{
    width: 90%;

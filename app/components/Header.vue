@@ -188,8 +188,6 @@ import { useColorMode } from '#imports';
 
 const colorMode = useColorMode()
 const toggleTheme = ()=>{
-    colorMode.preference = colorMode.value==='dark'
-    ?'light'
-    :'dark'
+    colorMode.preference = colorMode.value==='dark' ?'light' :'dark'
 }
 </script>

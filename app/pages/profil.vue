@@ -37,7 +37,7 @@
   @include span-setting;
 }
 .avatar_mini{
-  border: 1px solid greenyellow;
+  border: var(--border-profil);
   border-radius: 999px;
   width: 200px;
   height: 200px;

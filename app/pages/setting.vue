@@ -74,6 +74,7 @@
 
 }
 .avatar_smen span{
+  text-shadow: none !important;
   @include span-setting;
 }
 .name{
@@ -88,7 +89,11 @@
   @include input-setting;
 }
 .name_enter{
+  text-shadow: none !important;
   @include enter-setting;
+}
+.name_enter span{
+  text-shadow: none !important;
 }
 .email{
     @include on_of_notify_density_font_size;
@@ -104,6 +109,9 @@
 .email_enter{
   @include enter-setting;
 }
+.email_enter span{
+  text-shadow: none !important;
+}
 .password{
     @include on_of_notify_density_font_size;
     height: 15% !important;
@@ -116,6 +124,9 @@
 }
 .password_enter{
   @include enter-setting;
+}
+.password_enter span{
+  text-shadow: none !important;
 }
 
 
@@ -132,11 +143,20 @@
 .font-size_10{
   @include fontsize_density_button;
 }
+.font-size_10 span{
+  text-shadow: none !important;
+}
 .font-size_15{
   @include fontsize_density_button;
 }
+.font-size_15 span{
+  text-shadow: none !important;
+}
 .font-size_20{
   @include fontsize_density_button;
+}
+.font-size_20 span{
+  text-shadow: none !important;
 }
 .density{
     @include on_of_notify_density_font_size;
@@ -147,11 +167,20 @@
 .density_12{
   @include fontsize_density_button;
 }
+.density_12 span{
+  text-shadow: none !important;
+}
 .density_18{
   @include fontsize_density_button;
 }
+.density_18 span{
+  text-shadow: none !important;
+}
 .density_24{
   @include fontsize_density_button;
+}
+.density_24 span{
+  text-shadow: none !important;
 }
 .on_of_notify{
   @include on_of_notify_density_font_size;
@@ -162,8 +191,14 @@
 .notify_on{
  @include language;
 }
+.notify_on span{
+  text-shadow: none !important;
+}
 .notify_off{
   @include language;
+}
+.notify_off span{
+  text-shadow: none !important;
 }
 .language{
     width: 90%;
@@ -178,8 +213,14 @@
 .Language_ru{
   @include language;
 }
+.Language_ru span{
+  text-shadow: none !important;
+}
 .Language_en{
   @include language;
+}
+.Language_en span{
+  text-shadow: none !important;
 }
 
 
